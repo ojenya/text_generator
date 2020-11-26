@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<!-- служебная часть -->
+
+<head>
+    <!-- заголовок страницы -->
+    <title>Генератор писем</title>
+    <!-- настраиваем служебную информацию для браузеров -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- подключаем jQuery -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <!-- подключаем наш скрипт -->
+    <script src="script.js">
+    </script>
+    <!-- настраиваем внешний вид блока для готового письма и кнопки -->
+    <style type="text/css">
+        .text {
+            font-size: 20px;
+            width: 80%;
+            margin: 30px;
+        }
+        
+        .controls button {
+            font-size: 20px;
+            margin-left: 30px;
+        }
+    </style>
+    <!-- закрываем служебную часть страницы -->
+</head>
+
+<body>
+    <!-- в этом блоке будем выводить готовое письмо -->
+    <div class="text" id="text_here"></div>
+    <!-- блок с кнопкой, по нажатию на которую запускается нужная функция в скрипте -->
+    <div class="controls">
+        <button value="Получить новый текст" onclick="get_text();">Получить новый текст</button>
+    </div>
+</body>
+<!-- конец всей страницы -->
+
+</html>
